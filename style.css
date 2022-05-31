@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Arimo';
+    src: url(/Eduflow/E2/assets/font/static/Arimo-Regular.ttf);
+}
+
+body {
+    font-family: 'Arimo';
+}
+
+a {
+    color: #727D8D;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 30%;
+}
+
+header {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #727D8D;
+}
+
+.list-nav {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 829px) and (min-width:419px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    .list-nav {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/*(@media (max-width: 419px)  MENU HAMBURGUESA*/
