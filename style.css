@@ -3,8 +3,20 @@
     src: url(./assets/font/static/Arimo-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(./assets/font/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(./assets/font/Roboto/Roboto-Medium.ttf);
+}
+
+
 body {
     font-family: 'Arimo';
+    background: #000000;
 }
 
 a {
@@ -21,8 +33,8 @@ nav {
 header {
     width: 100%;
     flex-wrap: wrap;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #727D8D;
+    padding: 10px 0px 10px 0px;
+    background: #000000;
 }
 
 .list-nav {
@@ -37,6 +49,104 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
+.flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-inicio {
+    color: #727D8D;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+h2 {
+    font-size: 2.7em;
+    color: #4AC1B6;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.9em;
+    padding-bottom: 50px;
+    font-family: 'Roboto-Light';
+}
+
+.container-inicio {
+    width: 60%;
+}
+
+.section-inicio img {
+    width: 40%;
+}
+
+.btn-portfolio {
+    width: 30%;
+    height: 50px;
+    color: #4AC1B6;
+    background-color: #0C4964;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-family: 'Roboto-Medium';
+    font-size: 1.1em;
+}
+
+
+.section-info {
+    color: #727D8D;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+p {
+    font-size: 1.7em;
+}
+
+.container-info {
+    width: 50%;
+}
+
+.container-servicios {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.container-servicios h4 {
+    font-family: 'Roboto-Light';
+    color: #4AC1B6;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio {
+    background: #0C4964;
+    flex-grow: 1;
+    width: 50%;
+    height: 40vh;
+    border-radius: 15px;
+}
+
+footer {
+    color: #727D8D;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+
 
 @media (max-width: 829px) and (min-width:419px) {
     header {
